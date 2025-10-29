@@ -1,4 +1,4 @@
-# Pokénator CLI - Professional Edition
+# Pokénator CLI
 
 🎯 **The Ultimate Pokémon Mind Reader - Where Information Theory Meets Gaming**
 
@@ -137,7 +137,6 @@ Information Theory powers modern technology:
 - **Perfect Memory Assumption**: Assumes players know all Pokémon traits
 - **No Learning**: Doesn't adapt based on user patterns
 - **Static Database**: Pokémon data is hardcoded
-- **No Networking**: Single-player experience only
 
 ### Accuracy Considerations
 
@@ -145,12 +144,6 @@ Information Theory powers modern technology:
 - **User Error Factor**: Accuracy depends on honest/accurate responses
 - **Edge Cases**: Some Pokémon are inherently difficult to distinguish
 - **Trait Ambiguity**: Some characteristics are subjective
-
-### Known Issues
-
-- **Similar Pokémon**: Evolutionary lines can be challenging (e.g., Abra/Kadabra/Alakazam)
-- **Subjective Traits**: "Cute" or "intimidating" varies by player interpretation
-- **Missing Context**: No way to ask follow-up clarification questions
 
 ## 🛠️ Installation & Requirements
 
@@ -221,27 +214,6 @@ Your choice (1-5): 5
 [Game continues...]
 ```
 
-### Advanced Features
-- **Question Diversity System**: Automatically prevents spam questions
-- **Confidence Levels**: Support for uncertain responses
-- **Professional Interface**: Clean, focused design
-
-## 🔧 Customization
-
-### Modifying Game Parameters
-
-Edit `pokenator.py` to customize:
-
-```python
-# Change maximum questions per game
-self.max_questions = 20  # Default value
-
-# Modify question limits in question_diversity.py
-MAX_TYPE_QUESTIONS = 3      # Maximum type-related questions
-MAX_HABITAT_QUESTIONS = 2   # Maximum habitat questions  
-MAX_COLOR_QUESTIONS = 2     # Maximum color questions
-```
-
 ### Adding New Pokémon
 
 To extend beyond Generation 1:
@@ -249,36 +221,6 @@ To extend beyond Generation 1:
 1. **Update pokemon.json**: Add new Pokémon data
 2. **Update trait_matrix.json**: Add corresponding trait vectors
 3. **Test thoroughly**: Verify accuracy with larger dataset
-
-### Engine Modifications
-
-The modular design allows easy customization:
-
-- **engine.py**: Core identification algorithms
-- **question_diversity.py**: Question selection logic
-- **pokenator.py**: User interface and game flow
-
-## 🤝 Contributing
-
-Contributions are welcome! Areas for improvement:
-
-### Immediate Opportunities
-- **Multi-generation support**: Extend beyond Generation 1
-- **GUI version**: Graphical user interface
-- **Mobile app**: iOS/Android versions
-- **Multiplayer**: Network-based gameplay
-
-### Research Areas  
-- **Machine learning integration**: Adaptive questioning
-- **Natural language processing**: Text-based trait input
-- **Advanced statistics**: Bayesian inference improvements
-- **User modeling**: Personalized question strategies
-
-### Code Quality
-- **Unit tests**: Comprehensive test coverage
-- **Performance profiling**: Optimization opportunities
-- **Documentation**: API documentation
-- **Internationalization**: Multi-language support
 
 ## 📄 License
 
@@ -303,39 +245,3 @@ MIT License - Feel free to use, modify, and distribute!
 - Cover, T. M. & Thomas, J. A. (2006). "Elements of Information Theory"
 - Russell, S. & Norvig, P. (2020). "Artificial Intelligence: A Modern Approach"
 - Pokémon database: The Pokémon Company/Nintendo
-
-## 📞 Support
-
-Having issues? Check these common solutions:
-
-### Game Won't Start
-- Ensure Python 3.7+ is installed
-- Check that all files are in the same directory
-- Try running with `python3 main.py` instead
-
-### Accuracy Issues
-- Answer questions honestly and accurately
-- Use "Don't Know" when genuinely uncertain
-- Consider that some Pokémon share many traits
-
-### Performance Issues
-- Close other applications to free memory
-- Ensure you have sufficient disk space
-- Update to the latest Python version
-
-### Questions or Feedback?
-
-This is an educational project demonstrating Information Theory concepts. Feel free to:
-- Experiment with the code
-- Try different questioning strategies  
-- Explore the mathematical foundations
-- Build upon the algorithms
-
----
-
-**Pokénator CLI - Professional Edition**  
-*Where Mathematics Meets Gaming*
-
-Demonstrating Claude Shannon's Information Theory through interactive entertainment.
-
-Built with passion for education, mathematics, and Pokémon! 🎓🔢⚡
